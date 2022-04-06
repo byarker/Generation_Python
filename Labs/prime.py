@@ -2,8 +2,10 @@
 
 
 #Global Variables
-results = open("results.txt", "w")
-max
+results = open("Labs/results.txt", "w")
+upper_limit = 250
+
+
 
 #Functions
 def is_prime(x: int):
@@ -12,17 +14,17 @@ def is_prime(x: int):
         return False
     for i in range(x - 1, 2, -1):
         if x % i == 0:
-            isPrime = False
+            prime = False
             break
-    return isPrime
+    return prime
 
+if __name__ == "__main__":
+    print("Prime numbers:")
+    for value in range(1, upper_limit):
+        if is_prime(value):
+            print(value)
+            results.write(str(value) + "\n")
 
+    results.close()
 
-print("Prime numbers:")
-for value in range(1, 250):
-    if is_prime(value):
-        print(value)
-        results.write(str(value) + "\n")
-
-results.close()
 
