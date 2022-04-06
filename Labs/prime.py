@@ -1,11 +1,6 @@
-
-
-
 #Global Variables
 results = open("Labs/results.txt", "w")
 upper_limit = 250
-
-
 
 #Functions
 def is_prime(x: int):
@@ -26,5 +21,3 @@ if __name__ == "__main__":
             results.write(str(value) + "\n")
 
     results.close()
-
-
