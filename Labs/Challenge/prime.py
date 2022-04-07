@@ -1,5 +1,5 @@
 #Global Variables
-results = open("Labs/results.txt", "w")
+results = open("Labs/Challenge/results.txt", "w")
 lower_limit = 1
 upper_limit = 250
 
