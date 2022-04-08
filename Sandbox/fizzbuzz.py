@@ -2,7 +2,7 @@
 upper_limit = 100
 
 #Main
-def CheckValue(x: int):
+def CheckValue(x: int) -> str:
     output = ""
 
     if x % 3 == 0: output += "Fizz"
