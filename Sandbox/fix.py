@@ -7,7 +7,7 @@ magicians = {"Dark Magician": "Dark Magic Attack",
     "Dark Magician Girl":  "Dark Burning Attack",
     "Dark Magician of Chaos": "Spell of Destruction - Death Ultima"}
 
-selection = random.choice(list(magicians))
+selection = random.choice(list(magicians.keys))
 
 print("Go " + selection + "! " + magicians[selection] + "!")
 print(f"Go {selection}! {magicians[selection]}!")

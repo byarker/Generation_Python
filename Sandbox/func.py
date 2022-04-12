@@ -44,3 +44,23 @@ alpha = "Chicken"
 beta = alpha
 alpha = "Beef"
 print(beta)
+
+
+# --------------------
+# Contents of dictionaries can be anything
+SectionBreak("Dictionary contents")
+my_dictionary = {
+    "character": 'c',
+    "string": "hello",
+    "integer": 42,
+    "float": 3.14,
+    "list": [1,2,3,4,5,"David"],
+    "dictionary": {
+        "first_name": "Barry",
+        "last_name": "Chuckle",
+        "job": "Commedian"
+    }
+}
+
+for key, value in my_dictionary.items():
+    print(f"{key}: {value}")
