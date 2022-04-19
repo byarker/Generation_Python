@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse('This is the index of checklist 2')
+    return HttpResponse('This is the index of checklist')
